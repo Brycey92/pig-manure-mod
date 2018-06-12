@@ -21,7 +21,7 @@ final class ItemManure extends Item
             return EnumActionResult.FAIL;
         }
 
-        if (ItemDye.applyBonemeal(stack, worldIn, pos, playerIn))
+        if (ItemDye.applyBonemeal(stack, worldIn, pos, playerIn, hand))
         {
             if (!worldIn.isRemote)
             {
